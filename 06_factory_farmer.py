@@ -30,7 +30,7 @@ model += x11 + x12 <= 200
 model += x21 + x22 <= 310
 model += x31 + x32 <= 420
 model += x11 + x21 + x31 <= 460
-model += x12 + x22 + x32 <= 460
+model += x12 + x22 + x32 <= 560
 
 # 5. Solve Model
 model.solve()
