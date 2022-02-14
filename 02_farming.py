@@ -1,5 +1,4 @@
 from pulp import *
-
 # Descirbe Variables
 """
 x1: Ekilen buğday dönümü
@@ -17,15 +16,15 @@ w4: Düşük fiyatlı satılacak şeker pancarı
 model = LpProblem("min_kar",LpMinimize)
 
 # 2. Define Variables
-x1 = LpVariable("x1", lowBound = 0, cat = "Integer")
-x2 = LpVariable("x2", lowBound = 0, cat = "Integer")
-x3 = LpVariable("x3", lowBound = 0, cat = "Integer")
-y1 = LpVariable("y1", lowBound = 0, cat = "Integer")
-y2 = LpVariable("y2", lowBound = 0, cat = "Integer")
-w1 = LpVariable("w1", lowBound = 0, cat = "Integer")
-w2 = LpVariable("w2", lowBound = 0, cat = "Integer")
-w3 = LpVariable("w3", lowBound = 0, cat = "Integer")
-w4 = LpVariable("w4", lowBound = 0, cat = "Integer")
+x1 = LpVariable("x1", lowBound = 0)
+x2 = LpVariable("x2", lowBound = 0)
+x3 = LpVariable("x3", lowBound = 0)
+y1 = LpVariable("y1", lowBound = 0)
+y2 = LpVariable("y2", lowBound = 0)
+w1 = LpVariable("w1", lowBound = 0)
+w2 = LpVariable("w2", lowBound = 0)
+w3 = LpVariable("w3", lowBound = 0)
+w4 = LpVariable("w4", lowBound = 0)
 
 # 3. Define Objective Function
 model += 150*x1 + 230*x2 + 260*x3 + 238*y1 + 210*y2 - 170*w1 - 150*w2 - 36*w3 - 10*w4

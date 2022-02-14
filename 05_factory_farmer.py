@@ -1,5 +1,4 @@
 from pulp import *
-
 # Descirbe Variables
 """
 x11: 1.çiftçiden 1.bankaya giden miktar
@@ -40,3 +39,4 @@ print("3.çiftçiden 1.bankaya giden miktar: {}".format(x31.varValue))
 print("1.çiftçiden 2.bankaya giden miktar {}".format(x12.varValue))
 print("2.çiftçiden 2.bankaya giden miktar: {}".format(x22.varValue))
 print("3.çiftçiden 2.bankaya giden miktar {}".format(x32.varValue))
+

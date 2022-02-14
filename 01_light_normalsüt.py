@@ -1,11 +1,12 @@
+# import libraries
 import numpy as np
 import pandas as pd
-
+from pulp import *
 # !pip install pulp
+
+# Decision Variables
 # x: light süt miktarı
 # y: normal süt miktarı
-
-from pulp import *
 
 # 1. Initialize Model
 model = LpProblem("max_kar",LpMaximize)
